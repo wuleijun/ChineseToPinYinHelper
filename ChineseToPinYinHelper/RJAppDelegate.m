@@ -3,7 +3,7 @@
 //  ChineseToPinYinHelper
 //
 //  Created by jun on 13-11-1.
-//  Copyright (c) 2013年 https://github.com/wuleijun. All rights reserved.
+//  Copyright (c) 2013年 https://github.com/wuleijun All rights reserved.
 //
 
 #import "RJAppDelegate.h"
