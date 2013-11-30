@@ -5857,4 +5857,14 @@ char pinyinFirstLet(unsigned short hanzi) {
 	return strOfFirst;
 }
 
++ (NSString *)anotherWayToChineseToPinYin:(NSString *)chinese
+{
+    NSMutableString *string = [chinese mutableCopy];
+    NSLog(@"Before: %@", string); // Before: 你好
+    CFStringTransform((__bridge CFMutableStringRef)string, NULL, kCFStringTransformMandarinLatin, NO);
+    NSLog(@"After: %@", string);  // After: nǐ hǎo
+    CFStringTransform((__bridge CFMutableStringRef)string, NULL, kCFStringTransformStripDiacritics, NO);
+    NSLog(@"Striped: %@", string); // Striped: ni hao
+    return string;
+}
 @end

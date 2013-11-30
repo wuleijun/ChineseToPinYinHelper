@@ -14,4 +14,6 @@
 
 //Get First Letter Of string:中文-->Z
 + (NSString *)sortSectionTitle:(NSString *)string;
+
++ (NSString *)anotherWayToChineseToPinYin:(NSString *)chinese;
 @end

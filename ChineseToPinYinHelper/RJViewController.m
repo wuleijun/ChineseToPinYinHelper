@@ -35,7 +35,8 @@
     switch (btn.tag) {
         case kBtnTagAllLetters:
         {
-            self.lbl_Outcome.text = [RJChineseToPinYin pinyinFromChineseString:self.txtField.text];
+            //self.lbl_Outcome.text = [RJChineseToPinYin pinyinFromChineseString:self.txtField.text];
+            self.lbl_Outcome.text = [RJChineseToPinYin anotherWayToChineseToPinYin:self.txtField.text];
         }
             break;
         case kBtnTagFirstLetter:
